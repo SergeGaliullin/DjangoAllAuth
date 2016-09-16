@@ -27,6 +27,27 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+EMAIL_HOST = 'smtp.sendgrid.com'
+EMAIL_HOST_USER = 'sergegaliullin'
+EMAIL_HOST_PASSWORD = 'xxxxx'
+EMAIL_FROM = 'sergei.galiullin@gmail.com'
+EMAIL_PORT = 587
+EMAIL_USER_TLS = True
+
+'''
+from django.conf import settings
+from django.core.mail import send_mail
+
+send_mail(
+    'subject',
+    'message',
+    settings.EMAIL_FROM,
+    ['sergei.galiullin@gmail.com'],
+    fail_silently=False
+       )
+
+'''
+
 
 # Application definition
 
